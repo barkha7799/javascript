@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <script>
+        function add(a, b , callback){ 
+        document.write(`<h1>The sum of ${a} and ${b} is ${a+b}.` +"<br>"+
+        "<br>"); 
+        callback(); 
+        } 
+        add(7,7,function(){ 
+        document.write('This must be printed after addition.'); 
+        }); 
+        </script>
+    </head>
+</html>

@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script>
+        var promise = new Promise(
+            function (resolve, reject) {
+                var xhttp = new XMLHttpRequest();
+
+                xhttp.onload = function () {
+                    resolve(xhttp.responseText);
+                    var response = xhttp.responseText;
+                    var users = JSON.parse(response);
+                    for (var i = 0; i < users.length; i++) {
+                        console.log(users[i].name);
+                    }
+
+                };
+                xhttp.open("GET", "http://localhost:3000/users");
+                xhttp.send();
+
+            });
+
+        promise.then(function (response) {
+
+            console.log(response);
+        },
+            function (error) {
+
+                console.log(error);
+            });
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

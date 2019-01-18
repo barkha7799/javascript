@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+<body>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.addEventListener("load",
+            function () {
+                console.log(xhttp.responseText);
+                var response = xhttp.responseText;
+                var users = JSON.parse(response);
+                for (var i = 0; i < users.length; i++) {
+                    console.log(users[i].name);
+                }
+
+            });
+        xhttp.open("POST", "http://localhost:3000/users");
+        var data = {
+
+            "name": "abc"
+        };
+        xhttp.send(JSON.stringify(data));
+
+    </script>
+</body>
+</head>
+
+</html>

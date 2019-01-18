@@ -1,0 +1,24 @@
+<html>
+
+<head>
+
+<body>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "http://localhost:3000/users");
+        xhttp.onreadystatechange = (function (e) {
+            if (this.readyState === 4 && this.status === 200){
+                console.log(xhttp.responseText);
+                var response = xhttp.responseText;
+                var users = JSON.parse(response);
+                for (var i = 0; i < users.length; i++) {
+                    console.log(users[i].name);
+                }
+            }
+        });
+        xhttp.send();
+    </script>
+</body>
+</head>
+
+</html>

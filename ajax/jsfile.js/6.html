@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            var x={
+                method:"POST",
+                body: p,
+            }
+            var p=fetch("http://localhost:3000/users",x)
+            
+            var y=p.then(function(response){
+               return response.json();
+            })
+
+            y.then(function(response){
+                console.log(response)
+            })
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

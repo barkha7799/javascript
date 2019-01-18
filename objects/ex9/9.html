@@ -1,0 +1,51 @@
+<html>
+
+<body>
+    <title>demo</title>
+    <p id="demo"></p>
+
+    <script>
+        // var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // document.getElementById("demo1").innerHTML = fruits;
+
+        //function myFunction() {
+        // document.getElementById("demo2").innerHTML = fruits.shift("Banana");
+        // document.getElementById("demo3").innerHTML = fruits;
+        // }
+
+        var xyz = ["a", "b", "c", "d"];
+        var pqr = ["1", "2", "3"];
+        var result = "";
+        var barkha = xyz.concat(pqr);
+       // document.getElementById("demo").innerHTML = barkha;
+        result += ("Concate :" + xyz.concat(pqr) + "<br>");
+
+      //  document.getElementById("demo").innerHTML = xyz.toString();
+        result +=( "ToString :" + xyz.toString() + "<br>");
+
+     //   document.getElementById("demo").innerHTML = xyz.join(" * ");
+        result += ("Join :" + xyz.join("*") + "<br>");
+
+       // document.getElementById("demo").innerHTML = xyz.pop("b");
+        result +=( "pop :" + xyz.pop("b") + "<br>");
+
+        //document.getElementById("demo").innerHTML = xyz.push("e");
+        result += ("push :" + xyz.push("e") + "<br>");
+        
+      //  document.getElementById("demo").innerHTML = xyz.shift("f");
+        result += ("shift :" + xyz.shift("f") + "<br>");
+
+        //document.getElementById("demo").innerHTML = xyz.unshift("f");
+        result += ("unshift :" + xyz.unshift("f") + "<br>");
+
+       // document.getElementById("demo").innerHTML = xyz.delete[0];
+        result += ("delete :" + delete xyz[0] + "<br>");
+
+        
+        result += ("splice :" + xyz.splice(0, 1) + "<br>");
+        document.getElementById("demo").innerHTML = result;
+
+    </script>
+</body>
+
+</html>

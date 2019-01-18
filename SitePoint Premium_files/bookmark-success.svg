@@ -1,0 +1,16 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .tick{stroke-dasharray:206 206;stroke-dashoffset:206;-webkit-animation:tick .6s ease-in-out 1 forwards;animation:tick .6s ease-in-out 1 forwards;-webkit-animation-delay:1.5s;animation-delay:1.5s}
+    .tick2{stroke-dasharray:220 227;stroke-dashoffset:220;-webkit-animation:tick2 .6s ease-in-out 1 forwards;animation:tick2 .6s ease-in-out 1 forwards;-webkit-animation-delay:1.5s;animation-delay:1.5s}
+    @-webkit-keyframes tick{0%{stroke-dashoffset:200}100%{stroke-dashoffset:0}}@keyframes tick{0%{stroke-dashoffset:200}100%{stroke-dashoffset:0}}
+    @-webkit-keyframes tick2{0%{stroke-dashoffset:213}100%{stroke-dashoffset:0}}@keyframes tick2{0%{stroke-dashoffset:213}100%{stroke-dashoffset:0}}
+    .wait{-webkit-animation-delay:1.7s;animation-delay:1.7s;
+    }
+  </style>
+
+<rect width="300" height="300" fill="rgba(255,255,255,0)"/>
+
+<path class="bookmark" d="M214.08 55.814V245.183L144.674 196.912L78.7377 245.183V55.814H214.08Z" fill="#333333"/>
+<path d="M28 100.5L85 156.5L188 52" class="tick2" stroke="white" stroke-width="48"/>
+<path d="M34 105.5L85 156.5L179 62" class="tick" stroke="#42AE00" stroke-width="32"/>
+</svg> 

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>this</title>
+        <script>
+        function addprise(amount){
+            this.prise=amount;
+        }
+        function Book(title,author){
+            this.title="pqr";
+            this.prise="500";
+            this.author="sir";
+            this.addprise=addprise;
+        }
+        
+        </script>
+    </head>
+    <body>
+        <script>
+            var myBook=new Book("abc","xyz");
+            myBook.addprise(100);
+            document.write("Book Title Is:"+myBook.title +"<br>" );
+            document.write("Book Prise Is:"+myBook.prise+"<br>");
+            document.write("Book Author Is:"+myBook.author+"<br>");
+
+            </script>
+    </body>
+</html>

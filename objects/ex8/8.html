@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>Cylinder</title>
+    <script>
+        function cylinder(cyl_hight, cyl_diamater) {
+            this.cyl_hight = cyl_hight;
+            this.cyl_diamater = cyl_diamater;
+        }
+        cylinder.prototype.volume = function () {
+            var radius = this.cyl_diamater / 2;
+            return this.cyl_hight* Math.PI * radius * radius;
+        };
+        var cyl = new cylinder(7, 7);
+        console.log('volume =', cyl.Volume().toFixed(4));
+    </script>
+</head>
+
+</html>

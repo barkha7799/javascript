@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <p id="demo">0</p>
+
+    <script>
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+            this.name = function () {
+                return this.firstName + " " + this.lastName
+            };
+        }
+        var myFather = new Person("PATEL", "DIPAKBHAI", 40, "white");
+        // var mynewFater=new person("barkha","patel","pink","21");
+        document.getElementById("demo").innerHTML = "My father is " + myFather.name();
+        // document.getElementById("demo").innerHTML="My Father Is:" +myFather.name();
+        document.getElementById("demo").innerHTML="Age is:"+myFather.age();
+    </script>
+
+</body>
+
+</html>

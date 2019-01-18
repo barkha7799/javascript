@@ -1,0 +1,46 @@
+<html>
+
+<head>
+
+<body>
+    <script>
+        /* var xhr = new XMLHttpRequest();
+         xhr.open('GET', 'http://localhost:3000/users');
+         xhr.onload = function () {
+             console.log(xhr.responseURL); 
+         };
+         xhr.send(null);*/
+
+
+
+
+
+        /*var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://localhost:3000/users', true);
+        xhr.withCredentials = true;
+        xhr.send(null);*/
+
+
+        var request = new XMLHttpRequest();
+        request.open("GET", "foo.txt", true);
+        
+
+        request.onreadystatechange = function () {
+            if (this.readyState == this.HEADERS_RECEIVED) {
+                var headers = request.getAllResponseHeaders();
+                var arr = headers.trim().split(/[\r\n]+/);
+                var headerMap = {};
+                arr.forEach(function (line) {
+                    var parts = line.split(': ');
+                    var header = parts.shift();
+                    var value = parts.join(': ');
+                    headerMap[header] = value;
+                });
+            }
+        }
+  
+    </script>
+</body>
+</head>
+
+</html>

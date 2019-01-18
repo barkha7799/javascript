@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script>
+        class polygon {
+            constructor() {
+                this.name = "Polygon";
+            }
+        }
+        class Square extends polygon {
+            constructor() {
+                super();
+            }
+        }
+        class Rectangle { }
+        object.setPrototypeOf(Square.Prototype, Rectangle.Prototype)
+
+        console.log(Object.getPrototypeOf(Square.prototype) === Polygon.prototype);
+        console.log(Object.getPrototypeOf(Square.prototype) === Rectangle.prototype); 
+
+        let newInstance = new Square();
+        console.log(newInstance.name);
+    </script>
+</head>
+
+</html>
