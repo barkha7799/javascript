@@ -3,3 +3,15 @@ npm install json-server
 
 json-server users.json
 
+git clone url
+cd ClinicalAIWeb/
+npm install
+
+
+
+json-server --watch users.json :open localhost
+
+
+
+
+
